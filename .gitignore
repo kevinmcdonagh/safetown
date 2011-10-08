@@ -1,0 +1,71 @@
+bin
+gen
+
+tests/instrumentation/bin
+tests/instrumentation/gen
+
+####################################ANDROID
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated GUI files
+*R.java
+
+
+#####################################LINUX
+.*
+*~
+*.sw[a-p]
+
+# KDE
+.directory
+
+####################################OSX
+# Thumbnails
+._*
+*/**/*DSStore
+*DSStore
+
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+###################################ECLIPSE
+*.pydevproject
+*.project
+.metadata
+bin/**
+bin/**/*
+gen/**
+gen/**/*
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+*.classpath
+.settings/
+.loadpath
+default.properties
+
+# CDT-specific
+.cproject
+
+*.jar
+!podio_android_mobile/libs/*.jar
+
+target/
+lib_managed/
+src_managed/
+project/boot/
