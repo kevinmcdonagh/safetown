@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Fill" xmlns:a="http://schemas.android.com/apk/res/android" >
+	<com.saferoute.HeaderBar style="@style/Fill.Width" a:layout_height="100dp" a:id="@+id/actionbar_div" />
+</LinearLayout>
