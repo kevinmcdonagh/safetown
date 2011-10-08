@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import com.google.android.maps.ItemizedOverlay;
 import com.google.android.maps.OverlayItem;
@@ -51,14 +52,21 @@ public class SafeRouteOverlay extends ItemizedOverlay {
 		dialog.setTitle(item.getTitle());
 		dialog.setMessage(item.getSnippet());
 		dialog.setCancelable(false); 
-		dialog.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-			
+		Log.i("u suck", "msg");
+		dialog.setNeutralButton("etc...", new DialogInterface.OnClickListener() {
+			//onShowDialog(){
+				
+			//}
 			@Override
 			public void onClick(DialogInterface dialog, int which) 
 			{
-				dialog.cancel(); 
+				Log.i("lol", "mswasdg");
+				//onCli
 			}
 		});
+		
+		
+		
 		dialog.show();
 		return true; 
 	}

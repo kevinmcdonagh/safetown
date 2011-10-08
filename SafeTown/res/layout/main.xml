@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/mapview"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:clickable="true"
-	android:apiKey="0tBegw60ZmhsKhUHqItMq094t6AM6ALQea-1CSQ"
-/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+		 <com.google.android.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/mapview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:clickable="true"
+			android:apiKey="0T-y8hGgXs568h7TcnF-7dpTzheQZUSk7t3ocyg"
+		/>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="100dp"
+		    android:layout_height="100dp" >
+				<CheckBox android:id="@+id/checkbox"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="check" />
+		        <CheckBox android:id="@+id/checkbox"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="it" />
+		        <CheckBox android:id="@+id/checkbox"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="out" />
+
+
+		</LinearLayout>
+</LinearLayout>

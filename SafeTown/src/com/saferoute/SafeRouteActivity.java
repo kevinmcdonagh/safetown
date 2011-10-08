@@ -27,14 +27,15 @@ public class SafeRouteActivity extends MapActivity {
         mapView.setBuiltInZoomControls(true); 
         setupLocationInfo(); 
         
-        /*
+        
         List<Overlay> mapOverlays = mapView.getOverlays(); 
         Drawable drawable = this.getResources().getDrawable(R.drawable.icon);
         SafeRouteOverlay itemOverlay = new SafeRouteOverlay(drawable, this);
         GeoPoint point = new GeoPoint(19240000, -99120000); 
-        OverlayItem ovItem = new OverlayItem(point, "Hola", "I'm Mexican, my name is Michael, ariba");
-        itemOverlay.addOverlay(ovItem);
-        mapOverlays.add(itemOverlay);*/
+        OverlayItem ovItemWalk = new OverlayItem(point, "Hola", "Walk");
+        
+        itemOverlay.addOverlay(ovItemWalk);
+        mapOverlays.add(itemOverlay);
     }
     
     private void setupLocationInfo()
