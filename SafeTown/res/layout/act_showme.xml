@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/Fill" xmlns:a="http://schemas.android.com/apk/res/android" a:paddingLeft="@dimen/activity_gutter_padding_left" a:paddingRight="@dimen/activity_gutter_padding_right">
+	<TextView a:id="@+id/showme_title" a:text="Show Me..." a:gravity="center" style="@style/Fill.Width" a:textSize="40dp" a:textStyle="bold" a:paddingBottom="18dp"/>
+	<Spinner a:id="@+id/showme_spin_adjectives" a:layout_below="@+id/showme_title" style="@style/Fill.Width" a:layout_marginTop="40dp"/>
+	<Spinner a:id="@+id/showme_spin_nouns" a:layout_below="@+id/showme_spin_adjectives" style="@style/Fill.Width" />
+	<Button a:id="@+id/showme_btn_go" a:text="Go!" a:layout_below="@+id/showme_spin_nouns" style="@style/Fill.Width" a:layout_marginTop="40dp"/>
+</RelativeLayout>

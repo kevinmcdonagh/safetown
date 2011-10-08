@@ -9,16 +9,21 @@
 	   <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.SafeTown">
     	<uses-library android:name="com.google.android.maps" />
         <activity android:name=".SafeRouteActivity"
-                  android:label="@string/app_name"
-                  android:theme="@android:style/Theme.NoTitleBar">
+                  android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Home"
-                  android:label="@string/app_name"
-                  android:theme="@android:style/Theme.NoTitleBar">
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowMe"
+                  android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
