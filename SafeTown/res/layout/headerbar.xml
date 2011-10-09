@@ -5,7 +5,7 @@
 		<ImageView a:id="@+id/actionbar_btn_logo" style="@style/actionbar_btn_logo" />
 			
 		<View a:id="@+id/actionbar_spring" style="@style/actionbar_spring" />
-		
+		<ImageButton a:id="@+id/actionbar_btn_share" style="@style/actionbar_btn_share" />		
 		<ImageButton a:id="@+id/actionbar_btn_search" style="@style/actionbar_btn_search" />
 	</LinearLayout>
 </merge>

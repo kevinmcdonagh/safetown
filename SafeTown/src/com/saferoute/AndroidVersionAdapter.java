@@ -28,8 +28,8 @@ public class AndroidVersionAdapter extends BaseAdapter implements TitleProvider 
 
 	private LayoutInflater mInflater;
 
-	private static final String[] versions = {"1.5","1.6","2.1","2.2","2.3","3.0","x.y" };
-	private static final String[] names = {"Cupcake","Donut","Eclair","Froyo","Gingerbread","Honeycomb","IceCream Sandwich" };
+	private static final String[] names = {"Least Violent","Where you are","Most Violent"};
+	private static final String[] versions = {"1.5","1.6","2.1"};
 	
 	public AndroidVersionAdapter(Context context) {
 		mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
