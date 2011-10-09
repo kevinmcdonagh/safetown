@@ -21,7 +21,10 @@ import com.google.android.maps.Overlay;
 import com.google.android.maps.OverlayItem;
 
 public class SafeRouteActivity extends MapActivity {
-    @Override
+    
+	private MapView mapView; 
+	
+	@Override
     public void onCreate(Bundle savedInstanceState) 
     {
 		LondonSchools schools = new LondonSchools();
@@ -29,7 +32,7 @@ public class SafeRouteActivity extends MapActivity {
 		
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_home);
-        MapView mapView = (MapView) findViewById(R.id.mapview);
+        mapView = (MapView) findViewById(R.id.mapview);
         mapView.setBuiltInZoomControls(true); 
         setupLocationInfo();
         
@@ -56,6 +59,12 @@ public class SafeRouteActivity extends MapActivity {
 		viewFlow.setFlowIndicator(indicator);
     }
     
+    private void centerLocation(GeoPoint centerGeoPoint)
+    {
+    	mapView.getController().animateTo(centerGeoPoint);
+  
+    };
+    
     private void setupLocationInfo()
     {
     	LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE); 
@@ -64,8 +73,10 @@ public class SafeRouteActivity extends MapActivity {
 
 			@Override
 			public void onLocationChanged(Location location) {
-				System.out.println(location.toString()); 
-				
+				GeoPoint myGeoPoint = new GeoPoint(
+				(int)(location.getLatitude()*1000000),
+				(int)(location.getLongitude()*1000000));
+				centerLocation(myGeoPoint);
 			}
 
 			@Override
