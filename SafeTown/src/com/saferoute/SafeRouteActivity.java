@@ -4,19 +4,21 @@ package com.saferoute;
 import java.util.HashSet;
 import java.util.List;
 
-import com.google.android.maps.GeoPoint;
-import com.google.android.maps.MapActivity;
-import com.google.android.maps.MapView;
-import com.google.android.maps.Overlay;
-import com.saferoute.R;
-import android.graphics.drawable.Drawable;
-import com.google.android.maps.OverlayItem;
-import android.app.Activity;
+import org.taptwo.android.widget.TitleFlowIndicator;
+import org.taptwo.android.widget.ViewFlow;
+
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+
+import com.google.android.maps.GeoPoint;
+import com.google.android.maps.MapActivity;
+import com.google.android.maps.MapView;
+import com.google.android.maps.Overlay;
+import com.google.android.maps.OverlayItem;
 
 public class SafeRouteActivity extends MapActivity {
     @Override
@@ -46,6 +48,13 @@ public class SafeRouteActivity extends MapActivity {
         
         itemOverlay.addOverlay(ovItemWalk);
         mapOverlays.add(itemOverlay);
+
+		ViewFlow viewFlow = (ViewFlow) findViewById(R.id.viewflow);
+		AndroidVersionAdapter adapter = new AndroidVersionAdapter(this);
+		viewFlow.setAdapter(adapter, 3);
+		TitleFlowIndicator indicator = (TitleFlowIndicator) findViewById(R.id.viewflowindic);
+		indicator.setTitleProvider(adapter);
+		viewFlow.setFlowIndicator(indicator);
     }
     
     private void setupLocationInfo()
