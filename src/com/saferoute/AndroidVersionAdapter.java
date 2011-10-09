@@ -84,7 +84,7 @@ public class AndroidVersionAdapter extends BaseAdapter implements TitleProvider 
 		((TextView) convertView.findViewById(R.id.textLabelSchool)).setText(choice.getName()); 
 		((TextView) convertView.findViewById(R.id.textLabel)).setText(crime);	
 	}
-
+ 
 	/* (non-Javadoc)
 	 * @see org.taptwo.android.widget.TitleProvider#getTitle(int)
 	 */
