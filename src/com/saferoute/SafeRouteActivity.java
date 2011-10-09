@@ -22,7 +22,7 @@ import com.google.android.maps.OverlayItem;
 
 public class SafeRouteActivity extends MapActivity {
     
-	private MapView mapView; 
+	public static MapView mapView; 
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) 
@@ -59,11 +59,7 @@ public class SafeRouteActivity extends MapActivity {
 		viewFlow.setFlowIndicator(indicator);
     }
     
-    private void centerLocation(GeoPoint centerGeoPoint)
-    {
-    	mapView.getController().animateTo(centerGeoPoint);
-  
-    };
+ 
     
     private void setupLocationInfo()
     {
@@ -73,10 +69,10 @@ public class SafeRouteActivity extends MapActivity {
 
 			@Override
 			public void onLocationChanged(Location location) {
-				GeoPoint myGeoPoint = new GeoPoint(
-				(int)(location.getLatitude()*1000000),
-				(int)(location.getLongitude()*1000000));
-				centerLocation(myGeoPoint);
+				//GeoPoint myGeoPoint = new GeoPoint(
+				//(int)(location.getLatitude()*1000000),
+				//(int)(location.getLongitude()*1000000));
+				//centerLocation(myGeoPoint);
 			}
 
 			@Override

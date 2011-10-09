@@ -19,6 +19,8 @@ import java.util.HashSet;
 
 import org.taptwo.android.widget.TitleProvider;
 
+import com.google.android.maps.GeoPoint;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -78,11 +80,17 @@ public class AndroidVersionAdapter extends BaseAdapter implements TitleProvider 
 	}
 
 	
-
-	private void updateTextView(View convertView, School choice, String crime) 
+	private void centerLocation(GeoPoint centerGeoPoint)
 	{
+	    	SafeRouteActivity.mapView.getController().animateTo(centerGeoPoint);
+	    	SafeRouteActivity.mapView.getController().setZoom(15);
+	};
+	
+	private void updateTextView(View convertView, School choice, String crime) 
+	{	
 		((TextView) convertView.findViewById(R.id.textLabelSchool)).setText(choice.getName()); 
 		((TextView) convertView.findViewById(R.id.textLabel)).setText(crime);	
+		centerLocation(new GeoPoint(choice.getLat(), choice.getLongi())); 
 	}
  
 	/* (non-Javadoc)
