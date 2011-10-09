@@ -41,7 +41,7 @@ public class ShowMe extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(ShowMe.this, Home.class));
+				startActivity(new Intent(ShowMe.this, SafeRouteActivity.class));
 			}
 		});
 	}

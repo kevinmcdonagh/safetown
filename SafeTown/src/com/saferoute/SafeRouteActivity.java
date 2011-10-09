@@ -17,12 +17,11 @@ import android.location.LocationManager;
 import android.os.Bundle;
 
 public class SafeRouteActivity extends MapActivity {
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) 
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.act_home);
         MapView mapView = (MapView) findViewById(R.id.mapview);
         mapView.setBuiltInZoomControls(true); 
         setupLocationInfo(); 
