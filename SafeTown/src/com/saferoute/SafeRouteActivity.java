@@ -45,7 +45,6 @@ public class SafeRouteActivity extends MapActivity {
             itemOverlay.addOverlay(item);
         }
 
-        
         itemOverlay.addOverlay(ovItemWalk);
         mapOverlays.add(itemOverlay);
 
