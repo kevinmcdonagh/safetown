@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="actionbar_div" parent="@style/Fill.Width">
+		<item name="android:layout_height">@dimen/actionbar_div_height</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@drawable/bg_header</item>
+	</style>
+	
+	<style name="actionbar_btn_logo">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:paddingLeft">4dp</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:src">@drawable/header_ic_logo</item>
+		<item name="android:scaleType">center</item>
+	</style>
+	
+	<style name="actionbar_spring">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	
+	<style name="actionbar_btn_search" parent="@style/actionbar_btn">
+		<item name="android:id">@id/actionbar_btn_search</item>
+		<item name="android:src">@drawable/header_ic_search</item>
+		<item name="android:visibility">visible</item> 
+	</style>
+	
+	<style name="actionbar_btn_share" parent="@style/actionbar_btn">
+		<item name="android:id">@id/actionbar_btn_search</item>
+		<item name="android:src">@drawable/header_ic_share</item>
+		<item name="android:visibility">visible</item> 
+	</style>
+	
+	<!-- NOTE: These are gone by default, make them visible as you need them. -->
+	<style name="actionbar_btn">
+		<item name="android:visibility">gone</item> 
+		<item name="android:layout_width">@dimen/actionbar_div_height</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:scaleType">center</item>
+		<item name="android:background">@drawable/bg_selector_default</item>
+	</style>
+</resources>
