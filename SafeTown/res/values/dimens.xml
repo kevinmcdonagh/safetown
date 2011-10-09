@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<dimen name="activity_lbl_padding">6dp</dimen>
-	<dimen name="activity_gutter_padding">10dp</dimen>
-	<dimen name="activity_gutter_padding_top">8dp</dimen>
-	<dimen name="activity_gutter_padding_left">14dp</dimen>
-    <dimen name="activity_gutter_padding_right">14dp</dimen>
-</resources>
